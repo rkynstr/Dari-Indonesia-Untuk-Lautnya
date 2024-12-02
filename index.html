@@ -4,27 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dari Indonesia, Untuk Lautnya</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
 </head>
 
 <body>
     <header>
         <img src="header.png">
     </header>
-    <nav class="navbar">
+    <nav id="main-bar">
         <div class="logo">
-            <a href="#">•</a>
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                    fill="#0068b4">
+                    <path
+                        d="M80-240v-80q38 0 56.5-20t77.5-20q59 0 77.5 20t54.5 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20q38 0 55.5-20t76.5-20q59 0 77.5 20t56.5 20v80q-57 0-77.5-20T746-280q-36 0-54.5 20T614-240q-57 0-77.5-20T480-280q-38 0-56.5 20T346-240q-59 0-76.5-20T214-280q-38 0-56.5 20T80-240Zm0-160v-80q38 0 56.5-20t77.5-20q57 0 76.5 20t55.5 20q38 0 56.5-20t77.5-20q57 0 77 20t55 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20v80q-59 0-78.5-20T746-440q-36 0-54.5 20T614-400q-57 0-77.5-20T480-440q-38 0-55.5 20T348-400q-59 0-78.5-20T214-440q-36 0-56.5 20T80-400Zm0-160v-80q38 0 56.5-20t77.5-20q57 0 76.5 20t55.5 20q38 0 56.5-20t77.5-20q57 0 77 20t55 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20v80q-59 0-78.5-20T746-600q-36 0-54.5 20T614-560q-57 0-77.5-20T480-600q-38 0-55.5 20T348-560q-59 0-78.5-20T214-600q-36 0-56.5 20T80-560Z" />
+                </svg>
+            </a>
         </div>
-        <div class="menu">
-            <ul class="nav-links">
-                <li class="nav-link">
+        <div class="main-bar">
+            <ul class="main-contents">
+                <li class="main-links">
                     <a href="index.html">Pengertian</a>
                 </li>
-                <li class="nav-link pencapaian">
-                    <a href="#">Pencapaian
-                        <span class="material-icons dropdown-icon">
+                <li class="main-links drop">
+                    <a href="#">
+                        Pencapaian
+                        <span class="drop-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
                                 fill="#0068b4">
                                 <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
@@ -32,23 +38,29 @@
                             </svg>
                         </span>
                     </a>
-                    <ul class="drop-down">
-                        <li><a href="bilateral.html">Bilateral</a></li>
-                        <li><a href="multilateral.html">Multilateral</a></li>
-                        <li><a href="regional.html">Regional</a></li>
+                    <ul class="drop-contents">
+                        <li>
+                            <a href="bilateral.html">Bilateral</a>
+                        </li>
+                        <li>
+                            <a href="multilateral.html">Multilateral</a>
+                        </li>
+                        <li>
+                            <a href="regional.html">Regional</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="nav-link">
+                <li class="main-links">
                     <a href="penyimpulan.html">Penyimpulan</a>
                 </li>
-                <li class="nav-link">
+                <li class="main-links">
                     <a href="daftar pustaka.html">Daftar Pustaka</a>
                 </li>
             </ul>
         </div>
-        <div class="sidebar">
-            <input type="checkbox" id="btn" hidden />
-            <label for="btn" class="sidebar-btn">
+        <div class="side-bar">
+            <input type="checkbox" id="button" hidden />
+            <label for="button" class="side-button">
                 <svg class="bars" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
                     fill="#0068b4">
                     <path d="M0 0h24v24H0V0z" fill="none" />
@@ -61,22 +73,37 @@
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
                 </svg>
             </label>
-            <nav id="sidebar">
-                <div class="daftar-isi">Daftar Isi</div>
-                <ul class="sidebar">
-                    <li class="bab"><a href="pengertian.html">Pengertian</a></li>
-                    <li class="bab"><a href="#">Pencapaian</a></li>
-                    <li class="sub"><a href="bilateral.html">Bilateral</a></li>
-                    <li class="sub"><a href="multilateral.html">Multilateral</a></li>
-                    <li class="sub"><a href="regional.html">Regional</a></li>
-                    <li class="bab"><a href="penyimpulan.html">Penyimpulan</a></li>
-                    <li class="bab"><a href="daftar pustaka.html">Daftar Pustaka</a></li>
+            <nav id="side-bar">
+                <div class="contents">Daftar Isi</div>
+                <ul class="side-contents">
+                    <li class="side-links">
+                        <a href="index.html">Pengertian</a>
+                    </li>
+                    <li class="side-links">
+                        <a href="#">Pencapaian</a>
+                    </li>
+                    <li class="side-sublinks">
+                        <a href="bilateral.html">Bilateral</a>
+                    </li>
+                    <li class="side-sublinks">
+                        <a href="multilateral.html">Multilateral</a>
+                    </li>
+                    <li class="side-sublinks">
+                        <a href="regional.html">Regional</a>
+                    </li>
+                    <li class="side-links">
+                        <a href="penyimpulan.html">Penyimpulan</a>
+                    </li>
+                    <li class="side-links">
+                        <a href="daftar pustaka.html">Daftar Pustaka</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </nav>
-    <section>
-        <p class="s">Di zaman kita sekarang ini, tantangan global semakin kompleks dan saling terkait. Perubahan iklim
+    <main>
+        <p class="a">
+            Di zaman kita sekarang ini, tantangan global semakin kompleks dan saling terkait. Perubahan iklim
             mengancam
             keberlanjutan lingkungan hidup, ketimpangan sosial-ekonomi terus memperburuk kemiskinan, dan konflik di
             berbagai wilayah dunia menghambat perdamaian serta pembangunan.<br>
@@ -103,41 +130,42 @@
                 lebih inklusif dan komprehensif, melibatkan semua negara baik berkembang maupun maju. Berikut merupakan
                 ketujuhbelas tujuan tersebut.<br>
                 <br>
-            <h2 style="text-align: center; padding-bottom: 20px; font-size: 20px;">17 Program SDGs</h2>
-            <div class="row1">
-                <div class="goal" style="background-color: #ea1b2d">Tanpa Kemiskinan</div>
-                <div class="goal" style="background-color: #d29f2a">Tanpa Kelaparan</div>
-                <div class="goal" style="background-color: #239c46">Kehidupan Sehat dan Sejahtera</div>
-                <div class="goal" style="background-color: #c01f31">Pendidikan Berkualitas</div>
-                <div class="goal" style="background-color: #ee3f2a">Kesetaraan Gender</div>
-                <div class="goal" style="background-color: #01aed9">Air Bersih dan Sanitasi Layak</div>
+            </p>
+            <h2 style="text-align: center; padding-bottom: 20px; font-size: 20px">17 Program SDGs</h2>
+            <div class="daftar">
+                <div class="poin" style="background-color: #ea1b2d">Tanpa Kemiskinan</div>
+                <div class="poin" style="background-color: #d29f2a">Tanpa Kelaparan</div>
+                <div class="poin" style="background-color: #239c46">Kehidupan Sehat dan Sejahtera</div>
+                <div class="poin" style="background-color: #c01f31">Pendidikan Berkualitas</div>
+                <div class="poin" style="background-color: #ee3f2a">Kesetaraan Gender</div>
+                <div class="poin" style="background-color: #01aed9">Air Bersih dan Sanitasi Layak</div>
             </div>
-            <div class="row2">
-                <div class="goal" style="background-color: #fab70e">Energi Bersih dan Terjangkau</div>
-                <div class="goal" style="background-color: #8e173a">Pekerjaan Layak dan Pertumbuhan Ekonomi</div>
-                <div class="goal" style="background-color: #f16b24">Industri, Inovasi, dan Infrastruktur</div>
-                <div class="goal" style="background-color: #df1382">Berkurangnya Kesenjangan</div>
-                <div class="goal" style="background-color: #f99c25">Kota dan Pemukiman yang Berkelanjutan</div>
-                <div class="goal" style="background-color: #cf8b28">Konsumsi dan Produksi yang Bertanggung Jawab</div>
+            <div class="daftar">
+                <div class="poin" style="background-color: #fab70e">Energi Bersih dan Terjangkau</div>
+                <div class="poin" style="background-color: #8e173a">Pekerjaan Layak dan Pertumbuhan Ekonomi</div>
+                <div class="poin" style="background-color: #f16b24">Industri, Inovasi, dan Infrastruktur</div>
+                <div class="poin" style="background-color: #df1382">Berkurangnya Kesenjangan</div>
+                <div class="poin" style="background-color: #f99c25">Kota dan Pemukiman yang Berkelanjutan</div>
+                <div class="poin" style="background-color: #cf8b28">Konsumsi dan Produksi yang Bertanggung Jawab</div>
             </div>
-            <div class="row3">
-                <div class="goal" style="background-color: #47773d">Penanganan Perubahan Iklim</div>
-                <div class="goal" style="background-color: #0068b4">Ekosistem Lautan</div>
-                <div class="goal" style="background-color: #3baf4a">Ekosistem Daratan</div>
-                <div class="goal" style="background-color: #03548b">Perdamaian, Keadilan dan Kelembagaan yang Tangguh
+            <div class="daftar">
+                <div class="poin" style="background-color: #47773d">Penanganan Perubahan Iklim</div>
+                <div class="poin" style="background-color: #0068b4">Ekosistem Lautan</div>
+                <div class="poin" style="background-color: #3baf4a">Ekosistem Daratan</div>
+                <div class="poin" style="background-color: #03548b">Perdamaian, Keadilan dan Kelembagaan yang Tangguh
                 </div>
-                <div class="goal" style="background-color: #163469">Menguatkan Sarana Pelaksanaan dan Merevitalisasi
+                <div class="poin" style="background-color: #163469">Menguatkan Sarana Pelaksanaan dan Merevitalisasi
                     Kemitraan Global untuk Pembangunan
                     Berkelanjutan</div>
             </div>
-            <br>
-            Agenda ini menekankan pentingnya kolaborasi antarnegara, sektor swasta, organisasi masyarakat, dan
-            individu untuk menciptakan dunia yang lebih berkelanjutan dan sejahtera bagi generasi sekarang dan
-            mendatang. SDGs berlandaskan prinsip "Leave No One Behind," yang menegaskan bahwa pembangunan harus
-            mencakup semua lapisan masyarakat tanpa diskriminasi.
+            <p>
+                Agenda ini menekankan pentingnya kolaborasi antarnegara, sektor swasta, organisasi masyarakat, dan
+                individu untuk menciptakan dunia yang lebih berkelanjutan dan sejahtera bagi generasi sekarang dan
+                mendatang. SDGs berlandaskan prinsip "Leave No One Behind," yang menegaskan bahwa pembangunan harus
+                mencakup semua lapisan masyarakat tanpa diskriminasi.
             </p>
         </article>
-        <p class="s">
+        <p class="a">
             Di website ini, kita akan memperdalam tujuan SDGs yang ke-14. Fokus utama dari tujuan ini adalah melindungi
             dan melestarikan ekosistem laut yang menjadi penopang kehidupan bagi miliaran manusia. Dalam era modern,
             tekanan terhadap ekosistem laut semakin meningkat akibat aktivitas manusia seperti penangkapan ikan
@@ -156,8 +184,9 @@
                 terhadap lautan, seperti penangkapan ikan berlebihan, pencemaran laut, kerusakan habitat, dan dampak
                 perubahan iklim. Berikut merupakan target-target yang dimiliki tujuan ini.<br>
                 <br>
-            <h2 style="text-align: center; padding-bottom: 20px; font-size: 20px;">Target-Target SDG 14</h2>
-            <div class="row1">
+            </p>
+            <h2 style="text-align: center; font-size: 20px;">Target-Target SDG 14</h2>
+            <div class="row">
                 <div class="target">Mengurangi pencemaran laut, termasuk sampah plastik dan limbah berbahaya.</div>
                 <div class="target">Melestarikan ekosistem laut dan pesisir, seperti terumbu karang dan mangrove.</div>
                 <div class="target">Mengatur penangkapan ikan secara berkelanjutan untuk menjaga populasi ikan.</div>
@@ -165,10 +194,10 @@
                 <div class="target">Mengatasi dampak perubahan iklim terhadap laut, seperti pemanasan global dan
                     pengasaman laut.</div>
             </div>
-            <br>
-            Dengan mengimplementasikan SDG 14, dunia berupaya menjaga kesehatan laut sebagai salah satu elemen utama
-            penopang kehidupan manusia, ekonomi global, serta keseimbangan lingkungan bagi generasi sekarang dan
-            mendatang.
+            <p>
+                Dengan mengimplementasikan SDG 14, dunia berupaya menjaga kesehatan laut sebagai salah satu elemen utama
+                penopang kehidupan manusia, ekonomi global, serta keseimbangan lingkungan bagi generasi sekarang dan
+                mendatang.
             </p>
         </article>
         <article>
@@ -178,6 +207,7 @@
                 sebagai negara maritim yang sangat besar. Ini dikarenakan sumber daya kelautan yang sangat krisis bagi
                 pengembangan berkelanjutan, seperti:<br>
                 <br>
+            </p>
             <div class="row">
                 <div class="alasan">
                     Menjaga Sumber Kehidupan
@@ -260,9 +290,8 @@
                     mendatang.
                 </div>
             </div>
-            </p>
         </article>
-        <p class="s">
+        <p class="a">
             Indonesia, sebagai negara berkembang dengan populasi terbesar keempat di dunia, memiliki tanggung jawab
             besar untuk memenuhi Tujuan Pembangunan Berkelanjutan (SDGs). Pencapaian SDGs di Indonesia sangat penting
             untuk meningkatkan kesejahteraan masyarakat, mengurangi kemiskinan, melindungi lingkungan, serta memastikan
@@ -282,14 +311,29 @@
             memperkuat posisi Indonesia dalam komunitas internasional sebagai negara yang peduli terhadap masa depan
             dunia. Berikut merupakan pencapaian-pencapaian Indonesia.
         </p>
-    </section>
-    <section class="baseline">
-        <div class="baseline">
-            <a href="#">•</a>
-            <a href="#">•</a>
-            <a href="#">•</a>
+        </aside>
+    </main>
+    <aside>
+        <div class="logo">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                    fill="#0068b4">
+                    <path
+                        d="M80-240v-80q38 0 56.5-20t77.5-20q59 0 77.5 20t54.5 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20q38 0 55.5-20t76.5-20q59 0 77.5 20t56.5 20v80q-57 0-77.5-20T746-280q-36 0-54.5 20T614-240q-57 0-77.5-20T480-280q-38 0-56.5 20T346-240q-59 0-76.5-20T214-280q-38 0-56.5 20T80-240Zm0-160v-80q38 0 56.5-20t77.5-20q57 0 76.5 20t55.5 20q38 0 56.5-20t77.5-20q57 0 77 20t55 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20v80q-59 0-78.5-20T746-440q-36 0-54.5 20T614-400q-57 0-77.5-20T480-440q-38 0-55.5 20T348-400q-59 0-78.5-20T214-440q-36 0-56.5 20T80-400Zm0-160v-80q38 0 56.5-20t77.5-20q57 0 76.5 20t55.5 20q38 0 56.5-20t77.5-20q57 0 77 20t55 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20v80q-59 0-78.5-20T746-600q-36 0-54.5 20T614-560q-57 0-77.5-20T480-600q-38 0-55.5 20T348-560q-59 0-78.5-20T214-600q-36 0-56.5 20T80-560Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                    fill="#0068b4">
+                    <path
+                        d="M80-240v-80q38 0 56.5-20t77.5-20q59 0 77.5 20t54.5 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20q38 0 55.5-20t76.5-20q59 0 77.5 20t56.5 20v80q-57 0-77.5-20T746-280q-36 0-54.5 20T614-240q-57 0-77.5-20T480-280q-38 0-56.5 20T346-240q-59 0-76.5-20T214-280q-38 0-56.5 20T80-240Zm0-160v-80q38 0 56.5-20t77.5-20q57 0 76.5 20t55.5 20q38 0 56.5-20t77.5-20q57 0 77 20t55 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20v80q-59 0-78.5-20T746-440q-36 0-54.5 20T614-400q-57 0-77.5-20T480-440q-38 0-55.5 20T348-400q-59 0-78.5-20T214-440q-36 0-56.5 20T80-400Zm0-160v-80q38 0 56.5-20t77.5-20q57 0 76.5 20t55.5 20q38 0 56.5-20t77.5-20q57 0 77 20t55 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20v80q-59 0-78.5-20T746-600q-36 0-54.5 20T614-560q-57 0-77.5-20T480-600q-38 0-55.5 20T348-560q-59 0-78.5-20T214-600q-36 0-56.5 20T80-560Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                    fill="#0068b4">
+                    <path
+                        d="M80-240v-80q38 0 56.5-20t77.5-20q59 0 77.5 20t54.5 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20q38 0 55.5-20t76.5-20q59 0 77.5 20t56.5 20v80q-57 0-77.5-20T746-280q-36 0-54.5 20T614-240q-57 0-77.5-20T480-280q-38 0-56.5 20T346-240q-59 0-76.5-20T214-280q-38 0-56.5 20T80-240Zm0-160v-80q38 0 56.5-20t77.5-20q57 0 76.5 20t55.5 20q38 0 56.5-20t77.5-20q57 0 77 20t55 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20v80q-59 0-78.5-20T746-440q-36 0-54.5 20T614-400q-57 0-77.5-20T480-440q-38 0-55.5 20T348-400q-59 0-78.5-20T214-440q-36 0-56.5 20T80-400Zm0-160v-80q38 0 56.5-20t77.5-20q57 0 76.5 20t55.5 20q38 0 56.5-20t77.5-20q57 0 77 20t55 20q38 0 56.5-20t77.5-20q57 0 77.5 20t56.5 20v80q-59 0-78.5-20T746-600q-36 0-54.5 20T614-560q-57 0-77.5-20T480-600q-38 0-55.5 20T348-560q-59 0-78.5-20T214-600q-36 0-56.5 20T80-560Z" />
+                </svg>
+            </a>
         </div>
-    </section>
+    </aside>
     <footer>
         <img src="footer.png">
     </footer>
